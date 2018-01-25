@@ -172,14 +172,22 @@
           }
         }
 
-        .price__starting-at {
+        .price__prefix {
+          width: 100%;
           margin-top: -3px;
           font-size: 14px;
           color: $c-primary;
         }
 
+        .price__suffix {
+          display: inline-block;
+          margin-top: 4px;
+          font-size: 14px;
+          color: $c-primary;
+        }
+
         .field--name-price {
-          width: 100%;
+          display: inline-block;
           margin-bottom: 8px;
           font-size: 24px;
           font-weight: 300;

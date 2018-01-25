@@ -40,6 +40,14 @@ uh-recurring-digital:
     - core/jquery
     - core/drupal
 
+uh-event:
+  version: 1.x
+  js:
+    js/custom/plus/uh-event.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+
 slider:
   version: 1.x
   js:

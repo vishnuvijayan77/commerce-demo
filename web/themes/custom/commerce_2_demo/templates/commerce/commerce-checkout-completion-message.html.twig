@@ -65,4 +65,15 @@
       {% endfor %}
     </div>
   {% endif %}
+
+  {# For event_registration order types. #}
+  {% if order_type.entity.id == 'event_registration' %}
+    <h2>{{ "You're Booked!"|t }}</h2>
+    <div class="checkout-complete__event-registration">
+      {% trans %}
+        <p><strong>You will be receiving confirmation along with ticket(s) soon.</strong></p>
+        <p>If you need to cancel or make any changes, please <a href="/contact-us">contact us</a> and have your order number handy. Thanks!</p>
+      {% endtrans %}
+    </div>
+  {% endif %}
 </div>
