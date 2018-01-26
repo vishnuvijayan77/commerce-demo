@@ -29,6 +29,20 @@
         }, 700);
       });
     }
+
+    // If Find Out More link.
+    if ($(this).text().toLowerCase() === 'learn more') {
+      // Add click event.
+      $(this).click(function (event) {
+        // Prevent link default.
+        event.preventDefault();
+
+        // Scroll to next paragraph.
+        $('html, body').animate({
+          scrollTop: $(".product__content--top .field__item:nth-of-type(2)").offset().top
+        }, 700);
+      });
+    }
   });
 
   /**

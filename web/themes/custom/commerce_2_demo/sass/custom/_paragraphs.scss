@@ -263,6 +263,29 @@
 }
 
 /**
+ * Content grid.
+ */
+.paragraph.paragraph--type--content-grid {}
+
+
+/**
+ * Image, title, text.
+ */
+.paragraph.paragraph--type--image-title-text {
+  margin-bottom: 20px;
+  text-align: center;
+
+  .field--name-field-image {
+    margin: 0;
+
+     img {
+       margin: 0 auto;
+     }
+  }
+}
+
+
+/**
  * UH Axe slick slider.
  */
 .paragraph.paragraph--type--uh-axe-slider {
@@ -556,6 +579,21 @@
 
       @media (max-width: $screen-xs-max) {
         font-size: 36px;
+      }
+    }
+  }
+
+  // 2 column - No min height.
+  &.narrow-height {
+    .paragraph--type--2-column-image-content__image-left,
+    .paragraph--type--2-column-image-content__image-right {
+      min-height: auto;
+    }
+
+    .paragraph--type--2-column-image-content__content-left,
+    .paragraph--type--2-column-image-content__content-right {
+      .paragraph--type--2-column-image-content__content {
+        padding-bottom: 80px;
       }
     }
   }

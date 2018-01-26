@@ -1,0 +1,90 @@
+/**
+ * UH Event product styling.
+ */
+
+/**
+ * Product full.
+ */
+
+// Layout.
+.path-product-cold-brew-coffee-brewing-course {
+  .primary-nav {
+    border-bottom: none;
+  }
+
+  .site-content {
+    padding: 0;
+    margin-bottom: 0;
+    overflow-x: hidden;
+  }
+
+  .product__content--top {
+    padding-bottom: 30px;
+
+    @media (max-width: $screen-md-max) {
+      padding-bottom: 0;
+    }
+  }
+}
+
+.product--full.product--full--uh-event {
+
+  // Page title hidden to start, then moved into paragraph with jQuery.
+  .page-title {
+    display: none;
+  }
+  .paragraph .page-title {
+    display: block;
+    margin-bottom: -10px;
+    color: #fff;
+    font-weight: 600;
+    font-family: $f-tertiary;
+  }
+
+  // Paragraph overrides.
+  // Paragraph - 2 column content.
+  .paragraph.paragraph--type--2-column-image-content {
+    &.wood-siding-bg {
+      background: url(../gfx/product/uh-event/uh-wood-siding-bg.jpg) repeat;
+    }
+
+    &.large-title {
+      h2.paragraph-title {
+        margin-bottom: 10px;
+        color: #fff;
+      }
+    }
+
+    .paragraph--type--2-column-image-content__content-left:after,
+    .paragraph--type--2-column-image-content__content-right:after {
+      opacity: 0;
+
+      @media (max-width: $screen-xs-max) {
+        opacity: .75;
+      }
+    }
+  }
+
+  // Paragraph - Image, title, text.
+  .paragraph.paragraph--type--image-title-text {
+    .field--name-field-image {
+      border: none;
+    }
+
+    h3 {
+      margin-top: 10px;
+      margin-bottom: 5px;
+      color: $gray-dark;
+      font-size: 50px;
+      font-weight: 600;
+      font-family: $f-tertiary;
+      line-height: 1.2;
+      text-transform: none;
+
+      @media (max-width: $screen-sm-max) {
+        margin-bottom: 10px;
+        font-size: 40px;
+      }
+    }
+  }
+}
