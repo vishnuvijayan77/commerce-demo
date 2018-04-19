@@ -63,6 +63,7 @@ build:
   only:
     - master
     - UAT
+    - mailchimp_integration
 
   # this tells the build server to save these files between jobs, this keeps them to be deployed
   artifacts:
@@ -124,6 +125,7 @@ plus-demo-to-uat:
   # add any other tags or branches you want here
   only:
     - UAT
+    - mailchimp_integration
 
   environment:
     name: uat
