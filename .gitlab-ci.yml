@@ -238,4 +238,4 @@ plus-demo-live-post:
   #dependencies:
   #  - plus-demo-to-live
   script:
-    - loadtimer commerceplus.acromedia.com
+    - loadtimer commerceplus.acromedia.com || loadtimer commerceplus.acromedia.com
