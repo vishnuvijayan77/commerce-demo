@@ -44,7 +44,6 @@ codequality:
   except:
    - uat
    - master
-   - loadtimer_test
   image: docker:stable
   variables:
     DOCKER_DRIVER: overlay2
@@ -235,8 +234,8 @@ plus-demo-to-live:
 plus-demo-live-post:
   image: smmccabe/docker-loadtest
   stage: post
-  #dependencies:
-  #  - plus-demo-to-live
+  dependencies:
+    - plus-demo-to-live
   script:
     # Run first at a higher threshold to allow for cache generation, if it takes longer than this
     # thats a problem, an uncached page should take > 10 seconds
