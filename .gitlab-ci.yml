@@ -44,6 +44,7 @@ codequality:
   except:
    - uat
    - master
+   - loadtimer_test
   image: docker:stable
   variables:
     DOCKER_DRIVER: overlay2
@@ -237,7 +238,7 @@ plus-demo-live-post:
   #dependencies:
   #  - plus-demo-to-live
   script:
-    - apt-get update && apt-get install -y firefox bc
+    - apt-get update && apt-get install -y firefox bc wget
     - wget https://raw.githubusercontent.com/smmccabe/loadtimer/master/loadtimer
     - chmod +x loadtimer
     - ./loadtimer commerceplus.acromedia.com
