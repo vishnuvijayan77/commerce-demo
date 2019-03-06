@@ -26,7 +26,7 @@ Click around, take the interactive guided tours, go through the checkout flow, w
 
 ### Get a personalized tour
 
-If you’d like to have one of our experts go through the site with you and discuss how things work, use the demo site chat or [send us a message](https://www.acromedia.com/contact-us). We’ll set something up that works around your schedule. You can contact us through are website [here](https://www.acromedia.com/contact-us).
+If you’d like to have one of our experts go through the site with you and discuss how things work, use the demo site chat or [send us a message](https://www.acromedia.com/contact-us). We’ll set something up that works around your schedule. You can contact us through our website [here](https://www.acromedia.com/contact-us).
 
 ### Developer access
 
